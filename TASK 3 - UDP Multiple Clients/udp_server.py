@@ -17,7 +17,7 @@ print('UDP Server running on port ', server_port)
 while True:
     # cadd below is the client process address
     cmsg, cadd = server_socket.recvfrom(2048)
-    cmsg = cmsg.decode()
+    cmsg = cmsg
     print(cmsg)
 
     # send reply message to the client process
